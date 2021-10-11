@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+
+
+    <style>
+.floating-button {
+        text-decoration: none;
+        display: inline-block;
+        width: 350px;
+        height: 65px;
+        line-height: 70px;
+        border-radius: 45px;
+	border: 0.2rem outset white;
+        margin: 10px 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 1000;
+        color: white;
+        background: #7430D1;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+        transition: .3s;
+        line-height: 70px;
+      }
+      .floating-button:hover {
+        background: #6800EB;
+        box-shadow: 0 15px 20px rgba(41,0,92, .9);
+        color: white;
+        transform: translateY(-7px);
+      }
+
+.
+
+      .inner {
+        position: absolute;
+        top: 50%;
+      }
+
+    </style>
+</head>
+<body>
+<div class="popop">
+<p class="popop"><strong>NFT FOR STREAMERS</strong></p>
+</div>
+    <main>
+
+
+	<div class="circle"></div>
+			<p class="qwer">JOIN OUR BETA TEST</p>
+			<div class="qwer"><a href="join" type="submit" class="floating-button">JOIN</a></div>
+
+				<div class="container">
+
+
+                    <p class="container" align="center" ><a href="https://t.me/testnftfotwc" type="submit" class="floating-button" >OUR TELEGRAM</a></p>
+                    <p class="container" align="center" ><a href="{% static 'img/wp.docx' %}" type="submit" class="floating-button">OUR WHITE PAPER</a></p>
+
+
+                </div>
+    </main>
+        <div class="">
+            <p class="" ><blockquote><strong>CONTACT US:</strong></blockquote></p>
+            <p class=""><blockquote><strong>s99community@gmail.com</strong></blockquote></p>
+        </div>
+</body>
+</html>

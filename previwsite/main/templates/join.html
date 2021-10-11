@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style1.css' %}" type="text/css">
+    <title>Форма регистрации</title>
+</head>
+
+<body>
+    <main>
+        <div class="circle"></div>
+        <div class="register-form-container">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <h1 class="form-title">
+                    Registration for our beta test
+                </h1>
+                <div class="form-fields">
+                    <p>Enter your name</p>
+                    <div class="form-field">
+                        {{ form.name }}
+                    </div>
+                    <div class="form-field">
+                        <p>Enter your email</p>
+                        {{ form.mail }}
+                    </div>
+                    <div class="form-field">
+                        <a href="">Subscribe to our Twitter</a>
+                        {{ form.twsub }}
+                    </div>
+                    <div class="form-field">
+                        <a href="t.me">Retweet our pinned tweet, tag two friends and write your expectations for the project</a>
+                        {{ form.twretweet }}
+                    </div>
+                    <div class="form-field">
+                        <a href="">Join our Telegram channel</a>
+                        {{ form.telsubchannel }}
+                    </div>
+                    <div class="form-field">
+                        <a href="">Join our Telegram group</a>
+                        {{ form.telsubgroup }}
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button" type="submit">Registration</button>
+
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
